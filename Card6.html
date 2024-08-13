@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering AI Conversations</title>
+    <link rel="icon" href="Logo/Logo colorful.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #a48dce;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            font-size: xx-large;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            border-radius: 25%;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #f0f0f0 !important;
+        }
+
+        /* article */
+        .main-content {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            color: #6c757d;
+            text-align: justify;
+        }
+
+        /* sidebar recent posts */
+        .card {
+            margin: 15px 0;
+            background-color: #f0f0f0;
+            border-bottom: solid #6c757d;
+            color: #6c757d;
+            text-align: justify;
+        }
+
+        .related-posts {
+            border-radius: 10px;
+        }
+
+        .sticky-sidebar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
+        }
+
+        /* Feedback */
+        /* .feedback-form {
+            background-color: rgba(150, 148, 148, 0.685);
+            padding: 20px;
+            color: white;
+            border-radius: 10px; } */
+
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #a48dce;
+            border-color: #a48dce;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #916ebd;
+            border-color: #916ebd;
+        }
+
+
+        /* Embedded form styles */
+        .google-form {
+            background-color: rgba(150, 148, 148, 0.685);
+            /* padding: 20px;
+            border-radius: 10px; */
+        }
+
+        .google-form iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+
+        /* footer style */
+        .footer {
+            background-color: #a48dce;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+        }
+
+        .footer .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .footer .back-to-top a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="Logo/Logo colorful.jpeg" alt="logo"> Lets Explore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize fs-5" aria-current="page"
+                                href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="About.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="#contact-us">contact us</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Ends -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <!-- Article -->
+            <div class="col-md-8">
+                <div class="main-content">
+                    <article>
+                        <h2 class="mb-4 text-capitalize" style="color: #a48dce;">Unleash Your Inner Wizard: A Beginner’s
+                            Guide to Crafting Awesome Prompts for AI Chatbots</h2>
+                        <hr>
+                        <img src="Pics/openai.jpg" class="img-fluid mb-4" alt="Mastering AI Conversations">
+                        <p class="fs-5">Hey there, digital adventurers! 🌟 Ready to become a master of AI chatbots and
+                            unlock a world of limitless information? Whether you’re curious about the secrets of the
+                            universe or just need homework help, this beginner’s guide will show you how to craft
+                            magical prompts to get the best answers from your AI sidekick. Let’s dive in and level up
+                            your chatbot game!</p>
+                        <h5><b>What’s a Prompt, Anyway?</b></h5>
+                        <p class="fs-5">Think of a prompt as the spell you cast to make your AI chatbot do its magic.
+                            It’s the question or statement you give to the chatbot to get the information you need. The
+                            better your prompt, the more helpful and accurate the answer you’ll receive.</p>
+                        <h5><b>Why Should You Care?</b></h5>
+                        <p class="fs-5">Using chatbots is like having a super-smart friend who knows (almost)
+                            everything. Need a quick recipe? Want to know the latest tech trends? Curious about space
+                            travel? Your AI chatbot can help with all that and more! But first, you need to know how to
+                            talk to it properly.</p>
+                        <h5><b>Step-by-Step Guide to Crafting Epic Prompts</b></h5>
+                        <h5>1. Be Clear and Specific</h5>
+                        <p class="fs-5">Do: "How do I make chocolate chip cookies?"
+                            Don’t: "Tell me about cookies."
+                            Why: The clearer you are, the more precise the answer.</p>
+                        <h5>2. Ask One Question at a Time</h5>
+                        <p class="fs-5">Do: "What is the capital of France?"
+                            Don’t: "What is the capital of France and tell me a fun fact about it."
+                            Why: Single questions get single, focused answers.</p>
+                        <h5>3. Use Simple Language</h5>
+                        <p class="fs-5">Do: "What is AI?"
+                            Don’t: "Could you elucidate the concept of artificial intelligence?"
+                            Why: Simple language avoids confusion and gets straight to the point.</p>
+                        <h5>4. Add Context When Needed</h5>
+                        <p class="fs-5">Do: "What are some easy science experiments for kids?"
+                            Don’t: "Tell me some experiments."
+                            Why: Context helps the AI understand exactly what you need.</p>
+                        <h5>5. Experiment and Have Fun</h5>
+                        <p class="fs-5">Do: "What are some cool facts about dolphins?"
+                            Don’t: Stick to boring questions.
+                            Why: The more you experiment, the more you learn how to get awesome answers.</p>
+                        <h5><b>Common Mistakes to Avoid</b></h5>
+                        <h5>1. Vague Prompts</h5>
+                        <p class="fs-5">Bad Prompt: "Tell me about history."
+                            Better Prompt: "What were the causes of the American Civil War?" Why: Vague prompts may lead
+                            to broad or irrelevant answers.</p>
+                        <h5>2. Overloading Your Prompt</h5>
+                        <p class="fs-5">Bad Prompt: "What’s the weather like in Paris today, and can you recommend a
+                            good restaurant?"
+                            Why: Multiple questions in one prompt can confuse the AI and result in incomplete or
+                            inaccurate responses.</p>
+                        <h5>3. Ignoring Follow-Up Questions</h5>
+                        <p class="fs-5">Bad Prompt: "Explain blockchain."
+                            Better Prompt: "What are the main benefits of blockchain technology?"
+                            Why: Follow-up questions help clarify and deepen your understanding of a topic.</p>
+                        <h5><b>Examples of Effective Prompts</b></h5>
+                        <p class="fs-5">“How can I improve my writing skills?”
+
+                            Provides a specific topic for the AI to assist with.
+                            “Tell me about the history of space exploration.”
+
+                            Specifies a broad topic with enough detail to guide the AI's response.
+                            “What are some tips for starting a successful podcast?”
+
+                            Clearly asks for actionable advice on a specific task.
+                            “Can you recommend a good sci-fi novel published in the last year?”
+
+                            Requests a specific type of recommendation within a defined timeframe.
+                            “Explain the concept of quantum computing in simple terms.”
+
+                            Indicates the level of detail and complexity desired in the response.</p>
+                        <h5><b>Tips to Become a Prompt Crafting Master</b></h5>
+                        <p class="fs-5">Use Keywords: Include key terms related to your topic to help the AI understand
+                            your intent.
+                            Keep It Concise: Long prompts can confuse the AI. Stick to essential information.
+                            Practice Regularly: The more you interact with AI chatbots, the better you’ll become at
+                            crafting effective prompts and receiving useful responses.</p>
+                        <h5><b>Conclusion</b></h5>
+                        <p class="fs-5">Congratulations! You’ve now mastered the art of crafting effective prompts for
+                            AI chatbots. By following these guidelines, you’ll be able to interact more efficiently and
+                            get the information you need quickly and accurately. Remember, clear communication is key to
+                            unlocking the full potential of AI. So go ahead, ask away, and explore the endless
+                            possibilities with your new digital companion!</p>
+                </div>
+            </div>
+            <!-- Article Ends -->
+
+            <!-- Space -->
+            <div class="col-md-1">
+            </div>
+            <!-- Space Ends -->
+
+            <!-- sidebar -->
+            <div class="col-md-3">
+                <div class="related-posts sticky-sidebar">
+                    <h2 class="mb-4" style="color: #a48dce;">Recent Posts</h2>
+                    <div class="card mb-3">
+                        <img src="Pics/Ai in medicine.jpg" class="card-img-top" alt="Robots">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #a48dce;">Robots For Treatment</h5>
+                            <p class="card-text">Meet CARMEN, A Robot That Helps People With Mild Cognitive Impairment.
+                            </p>
+                            <a href="Card2.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="Pics/AI & human.jpg" class="card-img-top" alt="robots">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #a48dce;">Robots face the future</h5>
+                            <p class="card-text">Researchers have found a way to bind engineered skin tissue to the
+                                complex forms of
+                                humanoid robots.</p>
+                            <a href="Card3.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="Pics/AI Chess.jpg" class="card-img-top" alt="AI">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #a48dce;">The Future of AI</h5>
+                            <p class="card-text">The rapid advancements in artificial intelligence (AI) and machine
+                                learning have
+                                raised profound questions about the future of human creativity and the very essence of
+                                what it means to
+                                be human.</p>
+                            <a href="Card4.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar Ends -->
+        </div>
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Feedback Form -->
+    <div class="container-fluid py-0 px-0" style="background-image: url('Pics/desk1.jpg'); background-size: cover;">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="feedback-form mt-0">
+                    <!-- <h2 class="mb-4">Your Feedback</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="nameInput" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                  <label for="messageInput" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="messageInput" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form> -->
+                    <div class="google-form">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdLaRxfeA08lt4Kdzv8v87hTYpC__UyDR_InJKAdBfdtrAN3w/viewform?embedded=true"
+                            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feedback Form Ends -->
+
+    <!-- Newsletter stars -->
+    <section class="mt-0 py-5" style="background-color: #f0f0f0; border-top: solid #6c757d; color: #6c757d;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ms-auto">
+                    <div class="text-center mb-4">
+                        <h3 class="mb-3" style="color: #a48dce;">Subscribe to Our Newsletter</h3>
+                        <p>Stay updated with our latest news and updates!</p>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                                placeholder="Enter your email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-1 ms-auto"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter ends -->
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0" id="contact-us">
+                    <h5>Contact Us</h5>
+                    <p>Email: saadatyaseen309@gmail.com</p>
+                    <p>Phone: +92 349 6291309</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://wa.me/923496291309" aria-label="whatsapp"><img src="Icons/whatsapp.png"
+                                alt="whatsapp"></a>
+                        <a href="https://x.com/saadat_yaseen" aria-label="Twitter"><img src="Icons/twitter X.png"
+                                alt="Twitter"></a>
+                        <a href="https://www.instagram.com/saadat_yaseen" aria-label="Instagram"><img
+                                src="Icons/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/saadat-yaseen-95805b1b9/" aria-label="LinkedIn"><img
+                                src="Icons/Linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <div class="back-to-top">
+                        <a href="#top">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-top: 1px solid white; margin: 20px 0;">
+            <p class="mb-0">© 2024 Lets Explore. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

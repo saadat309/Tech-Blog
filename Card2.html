@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet CARMEN</title>
+  <link rel="icon" href="Logo/Logo colorful.jpeg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #a48dce;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .navbar-brand {
+      font-size: xx-large;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      border-radius: 25%;
+    }
+
+    .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      color: #f0f0f0 !important;
+    }
+
+    /* article */
+    .main-content {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      color: #6c757d;
+      text-align: justify;
+    }
+
+    /* sidebar recent posts */
+    .card {
+      margin: 15px 0;
+      background-color: #f0f0f0;
+      border-bottom: solid #6c757d;
+      color: #6c757d;
+      text-align: justify;
+    }
+
+    .related-posts {
+      border-radius: 10px;
+    }
+
+    .sticky-sidebar {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 20px;
+    }
+
+    /* Feedback */
+    /* .feedback-form {
+            background-color: rgba(150, 148, 148, 0.685);
+            padding: 20px;
+            color: white;
+            border-radius: 10px; } */
+
+
+    /* Buttons */
+    .btn-primary {
+      background-color: #a48dce;
+      border-color: #a48dce;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #916ebd;
+      border-color: #916ebd;
+    }
+
+
+    /* Embedded form styles */
+    .google-form {
+      background-color: rgba(150, 148, 148, 0.685);
+      /* padding: 20px;
+            border-radius: 10px; */
+    }
+
+    .google-form iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+    }
+
+    /* footer style */
+    .footer {
+      background-color: #a48dce;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: white;
+    }
+
+    .footer .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .footer .back-to-top a {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="Logo/Logo colorful.jpeg" alt="logo"> Lets Explore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-capitalize fs-5" aria-current="page" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize fs-5" href="About.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize fs-5" href="#contact-us">contact us</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <div class="row">
+      <!-- Article -->
+      <div class="col-md-8">
+        <div class="main-content">
+          <article>
+            <h2 class="mb-4 text-capitalize" style="color: #a48dce;">Meet CARMEN, a robot that helps people with mild
+              cognitive impairment</h2>
+            <hr>
+            <img src="Pics/Ai in medicine.jpg" class="img-fluid mb-4" alt="Meet CARMEN">
+            <p class="fs-5">Meet CARMEN, short for Cognitively Assistive Robot for Motivation and Neurorehabilitation-a
+              small, tabletop robot designed to help people with mild cognitive impairment (MCI) learn skills to improve
+              memory, attention, and executive functioning at home.
+
+              Unlike other robots in this space, CARMEN was developed by the research team at the University of
+              California San Diego in collaboration with clinicians, people with MCI, and their care partners. To the
+              best of the researchers' knowledge, CARMEN is also the only robot that teaches compensatory cognitive
+              strategies to help improve memory and executive function.</p>
+            <p class="fs-5">"We wanted to make sure we were providing meaningful and practical inventions," said Laurel
+              Riek, a professor of computer science and emergency medicine at UC San Diego and the work's senior author.
+
+              MCI is an in-between stage between typical aging and dementia. It affects various areas of cognitive
+              functioning, including memory, attention, and executive functioning. About 20% of individuals over 65 have
+              the condition, with up to 15% transitioning to dementia each year. Existing pharmacological treatments
+              have not been able to slow or prevent this evolution, but behavioral treatments can help.
+
+              Researchers programmed CARMEN to deliver a series of simple cognitive training exercises. For example, the
+              robot can teach participants to create routine places to leave important objects, such as keys; or learn
+              note taking strategies to remember important things. CARMEN does this through interactive games and
+              activities.</p>
+            <p class="fs-5">The research team designed CARMEN with a clear set of criteria in mind. It is important that
+              people can use the robot independently, without clinician or researcher supervision. For this reason,
+              CARMEN had to be plug and play, without many moving parts that require maintenance. The robot also has to
+              be able to function with limited access to the internet, as many people do not have access to reliable
+              connectivity. CARMEN needs to be able to function over a long period of time. The robot also has to be
+              able to communicate clearly with users; express compassion and empathy for a person's situation; and
+              provide breaks after challenging tasks to help sustain engagement.
+
+              Researchers deployed CARMEN for a week in the homes of several people with MCI, who then engaged in
+              multiple tasks with the robot, such as identifying routine places to leave household items so they don't
+              get lost, and placing tasks on a calendar so they won't be forgotten. Researchers also deployed the robot
+              in the homes of several clinicians with experience working with people with MCI. Both groups of
+              participants completed questionnaires and interviews before and after the week-long deployments.</p>
+            <p class="fs-5">After the week with CARMEN, participants with MCI reported trying strategies and behaviors
+              that they previously had written off as impossible. All participants reported that using the robot was
+              easy. Two out of the three participants found the activities easy to understand, but one of the users
+              struggled. All said they wanted more interaction with the robot.
+
+              "We found that CARMEN gave participants confidence to use cognitive strategies in their everyday life, and
+              participants saw opportunities for CARMEN to exhibit greater levels of autonomy or be used for other
+              applications," the researchers write.
+
+              The research team presented their findings at the ACM/IEEE Human Robot Interaction (HRI) conference in
+              March 2024, where they received a best paper award nomination.</p>
+            <h4>Next steps</h4>
+            <p class="fs-5">Next steps include deploying the robot in a larger number of homes.
+
+              Researchers also plan to give CARMEN the ability to have conversations with users, with an emphasis on
+              preserving privacy when these conversations happen. This is both an accessibility issue (as some users
+              might not have the fine motor skills necessary to interact with CARMEN's touch screen), as well as because
+              most people expect to be able to have conversations with systems in their homes. At the same time,
+              researchers want to limit how much information CARMEN can give users. "We want to be mindful that the user
+              still needs to do the bulk of the work, so the robot can only assist and not give too many hints," Riek
+              said.</p>
+            <p class="fs-5">Researchers are also exploring how CARMEN could assist users with other conditions, such as
+              ADHD.
+
+              The UC San Diego team built CARMEN based on the FLEXI robot from the University of Washington. But they
+              made substantial changes to its hardware, and wrote all its software from scratch. Researchers used ROS
+              for the robot's operating system.
+
+              Many elements of the project are available at <a
+                href="https://github.com/UCSD-RHC-Lab/CARMEN">https://github.com/UCSD-RHC-Lab/CARMEN</a></p>
+          </article>
+        </div>
+
+
+      </div>
+      <!-- Article Ends -->
+
+      <!-- Space -->
+      <div class="col-md-1">
+      </div>
+      <!-- Space Ends -->
+
+      <!-- sidebar -->
+      <div class="col-md-3">
+        <div class="related-posts sticky-sidebar">
+          <h2 class="mb-4" style="color: #a48dce;">Recent Posts</h2>
+          <div class="card mb-3">
+            <img src="Pics/Ai in medicine.jpg" class="card-img-top" alt="Robots">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #a48dce;">Robots For Treatment</h5>
+              <p class="card-text">Meet CARMEN, A Robot That Helps People With Mild Cognitive Impairment.
+              </p>
+              <a href="Card2.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="Pics/AI & human.jpg" class="card-img-top" alt="robots">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #a48dce;">Robots face the future</h5>
+              <p class="card-text">Researchers have found a way to bind engineered skin tissue to the complex forms of
+                humanoid robots.</p>
+              <a href="Card3.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <img src="Pics/AI Chess.jpg" class="card-img-top" alt="AI">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #a48dce;">The Future of AI</h5>
+              <p class="card-text">The rapid advancements in artificial intelligence (AI) and machine learning have
+                raised profound questions about the future of human creativity and the very essence of what it means to
+                be human.</p>
+              <a href="Card4.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar Ends -->
+    </div>
+  </main>
+  <!-- Main Content End -->
+
+  <!-- Feedback Form -->
+  <div class="container-fluid py-0 px-0" style="background-image: url('Pics/desk1.jpg'); background-size: cover;">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="feedback-form mt-0">
+          <!-- <h2 class="mb-4">Your Feedback</h2>
+          <form>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="messageInput" class="form-label">Your Message</label>
+              <textarea class="form-control" id="messageInput" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> -->
+          <div class="google-form">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdLaRxfeA08lt4Kdzv8v87hTYpC__UyDR_InJKAdBfdtrAN3w/viewform?embedded=true"
+              frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feedback Form Ends -->
+
+  <!-- Newsletter stars -->
+  <section class="mt-0 py-5" style="background-color: #f0f0f0; border-top: solid #6c757d; color: #6c757d;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ms-auto">
+          <div class="text-center mb-4">
+            <h3 class="mb-3" style="color: #a48dce;">Subscribe to Our Newsletter</h3>
+            <p>Stay updated with our latest news and updates!</p>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                placeholder="Enter your email">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-md-1 ms-auto"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter ends -->
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0" id="contact-us">
+          <h5>Contact Us</h5>
+          <p>Email: saadatyaseen309@gmail.com</p>
+          <p>Phone: +92 349 6291309</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://wa.me/923496291309" aria-label="whatsapp"><img src="Icons/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://x.com/saadat_yaseen" aria-label="Twitter"><img src="Icons/twitter X.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/saadat_yaseen" aria-label="Instagram"><img src="Icons/instagram.png"
+                alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/saadat-yaseen-95805b1b9/" aria-label="LinkedIn"><img
+                src="Icons/Linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-top: 1px solid white; margin: 20px 0;">
+      <p class="mb-0">© 2024 Lets Explore. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

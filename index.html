@@ -2,1713 +2,443 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" href="Pics/Arif5.jpg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* .section1 .div1,
-        .section1 .div2,
-        .section1 .div3,
-        .section2 .div1,
-        .section2 .div3,
-        .section3 .div1,
-        .section3 .div2,
-        .section4 .div1,
-        .section4 .div2,
-        .section4 .tweet-icons,
-        .section5,
-        .section6 {
-            opacity: 0;
-            transition: opacity 2s ease-out, transform 3s ease-out;
-        }
-
-        .section1 .div1.in-view,
-        .section1 .div2.in-view,
-        .section1 .div3.in-view,
-        .section2 .div1.in-view,
-        .section2 .div3.in-view,
-        .section3 .div1.in-view,
-        .section3 .div2.in-view,
-        .section4 .div1.in-view,
-        .section4 .div2.in-view,
-        .section4 .tweet-icons.in-view,
-        .section5.in-view,
-        .section6.in-view {
-            opacity: 1;
-            transform: translateX(0);
-        } */
-
-        /* section1 */
-
-        .section1 {
-            margin: 0;
-            padding: 0;
-            max-height: fit-content;
-        }
-
-        .pic1 {
-            max-width: 100%;
-            height: auto;
-            transition: transform 1s;
-            margin: 0rem 2rem;
-        }
-
-        .section1 .div1.in-view {
-            margin: 0;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            padding-bottom: 0rem;
-            padding-top: 0rem;
-            animation: section1-div1 2s forwards;
-        }
-
-        @keyframes section1-div1 {
-            from {
-                transform: translateY(40rem);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .section1 .div2 {
-            margin: 0 auto;
-            padding-top: 10rem;
-            padding-bottom: 0rem;
-            padding-left: 5rem;
-            padding-right: 5rem;
-            text-align: start;
-        }
-
-        .section1 .div2.in-view {
-            animation: section1-div2 2.5s forwards;
-        }
-
-        .section1 .div3 {
-            display: none;
-        }
-
-        .section1 .div3.in-view {
-            animation: section1-div2 2.5s forwards;
-        }
-
-        @keyframes section1-div2 {
-            from {
-                transform: translateX(50rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .section1 .div2 h1 {
-            font-size: 6vw;
-            font-weight: bolder;
-            letter-spacing: 1vw;
-            transition: transform 1s;
-        }
-
-        .section1 .div2 h1:hover {
-            transform: scale(1.1);
-        }
-
-        .section1 .div2 h1 .span1 {
-            display: inline-block;
-            color: darkolivegreen;
-            border-bottom: 0.5vw solid darkolivegreen;
-            border-left: 0.5vw solid darkolivegreen;
-        }
-
-        .section1 .div2 h1 .span2 {
-            display: inline-block;
-            color: darkorange;
-            border-bottom: 0.5vw solid darkorange;
-            border-left: 0.5vw solid darkorange;
-        }
-
-        .section1 .div2 h1 .span3 {
-            display: inline-block;
-            color: darkred;
-            border-bottom: 0.5vw solid darkred;
-            border-left: 0.5vw solid darkred;
-        }
-
-
-        /* Media Queries for Section 1 */
-
-        @media (max-width: 991px) {
-            .pic1 {
-                max-width: 100%;
-                height: 30rem;
-                margin: 0rem 0rem;
-                padding: 0 auto;
-
-            }
-
-            .section1 .div2 {
-                margin: 0 auto;
-                padding: auto;
-                font-size: 4vw;
-            }
-
-            .section1 {
-                padding-right: 2rem;
-            }
-        }
-
-
-        @media (max-width: 767px) {
-
-            .section1 .div2 h1:hover {
-                transform: none;
-            }
-
-            .section1 .div1 {
-                text-align: center;
-            }
-
-            .pic1 {
-                height: auto;
-                margin: 0 auto;
-            }
-
-            .section1 .div2 {
-                display: none;
-            }
-
-            .section1 .div3 {
-                display: block;
-                padding: 0rem;
-                text-align: center;
-            }
-
-            .section1 .div3 h1 {
-                font-size: 10vw;
-                margin: 5rem auto;
-                font-weight: bolder;
-                letter-spacing: 1vw;
-                transition: transform 1s;
-            }
-
-            .section1 .div3 h1 .span1 {
-                color: darkolivegreen;
-                border-bottom: 0.5vw solid darkolivegreen;
-                border-left: 0.5vw solid darkolivegreen;
-            }
-
-            .section1 .div3 h1 .span2 {
-                color: darkorange;
-                border-bottom: 0.5vw solid darkorange;
-                border-left: 0.5vw solid darkorange;
-            }
-
-            .section1 .div3 h1 .span3 {
-                color: darkred;
-                border-bottom: 0.5vw solid darkred;
-                border-left: 0.5vw solid darkred;
-            }
-
-            .section1 {
-                padding-right: 0rem;
-            }
-        }
-
-
-        /* section2 */
-
-        .section2 {
-            background-color: #081c15;
-            max-height: fit-content;
-            margin: 0rem;
-            padding: 0rem;
-            border-radius: 5%;
-            box-shadow: 0 4px 8px #40916c
-        }
-
-        .section2 .div1 {
-            margin: 0rem;
-            padding: 5rem;
-
-        }
-
-        .section2 .div1 .div2 h1 {
-            color: darkorange;
-            font-size: 10vw;
-        }
-
-
-        .section2 .div1.in-view {
-            animation: section2-div1 2.5s forwards;
-        }
-
-        @keyframes section2-div1 {
-            from {
-                transform: translateX(-50rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .section2 .div3 {
-            margin: 0rem;
-            padding: 4rem;
-        }
-
-        .section2 .div3 p {
-            color: #dbf3dc;
-            padding-left: 1rem;
-            font-size: 2vw;
-            text-align: justify;
-            border-left: 0.5vw dashed #dbf3dc;
-            border-color: darkorange;
-            line-height: 4vw;
-            word-spacing: 0.6vw;
-        }
-
-        /* .section2 .div3 p {
-            transition: transform 1s;
-        }
-
-        .section2 .div3 p:hover {
-            transform: scale(1.1);
-        } */
-
-        .section2 .div3.in-view {
-            animation: section2-div3 2.5s forwards;
-        }
-
-        @keyframes section2-div3 {
-            from {
-                transform: translateX(40rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-
-        /* Media Queries for Section 2 */
-
-        @media (max-width: 767px) {
-
-            .section2 .div3 p:hover {
-                transform: none;
-            }
-
-            .section2 {
-                border-radius: 5%;
-            }
-
-            .section2 .div3 {
-                padding: 2rem;
-                padding-top: 2rem;
-            }
-
-            .section2 .div3 p {
-                font-size: 5vw;
-                padding: 0rem;
-                padding-left: 1rem;
-                line-height: 7vw;
-                word-spacing: 2vw;
-            }
-
-            .section2 .div1 {
-                margin: 0;
-                padding: 4rem;
-                padding-bottom: 0rem;
-            }
-
-            .section2 .div1 .div2 h1 {
-                font-size: 12vw;
-            }
-
-        }
-
-
-
-        /* section3 */
-
-        .section3 {
-            margin: 2rem auto;
-            width: 95%;
-            padding: 0;
-            max-height: fit-content;
-            background-color: transparent;
-        }
-
-        .section3 .div1 .mobile {
-            display: none;
-            padding-top: 2rem;
-        }
-
-        .section3 .div1 .mobile h1 {
-            color: #081c15;
-            font-size: 10vw;
-        }
-
-        .section3 .div1.in-view {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            animation: section3-div1 forwards 1s;
-        }
-
-        @keyframes section3-div1 {
-            from {
-                transform: translateX(-40rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .pic3 {
-            max-width: 85%;
-            height: auto;
-            border-radius: 5%;
-            margin: 5rem auto
-        }
-
-        .section3 .div2.in-view {
-            color: #081c15;
-            margin: 0;
-            padding: 3rem;
-            animation: section3-div2 forwards 2.5s;
-        }
-
-        @keyframes section3-div2 {
-            from {
-                transform: translateX(50rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .section3 .div2 h1 {
-            color: #081c15;
-            font-size: 6vw;
-        }
-
-        .section3 .div2 .div4 {
-            
-            padding-top: 1rem;
-            padding-bottom: 0;
-            padding-right: 1rem;
-           
-        }
-
-        .section3 .div2 .div4 p {
-            padding-left: 1rem;
-            font-size: 2vw;
-            text-align: justify;
-            border-left: 0.5vw dashed #081c15;
-            line-height: 4vw;
-            word-spacing: 0.6vw;
-        }
-
-        /* .section3 .div2 .div3 {
-            transition: transform 1s;
-        }
-
-        .section3 .div2 .div3:hover {
-            transform: scale(1.1);
-        } */
-
-        /* Media Queries for Section 3 */
-
-        @media (max-width: 767px) {
-            .section3 {
-                margin-top: 0rem;
-            }
-
-            .section3 .div2 .div3:hover {
-                transform: none;
-            }
-
-            .section3 .div2.in-view {
-                padding: 1rem;
-            }
-
-            .section3 .div1 .mobile {
-                display: block;
-                text-align: center;
-            }
-
-            .pic3 {
-                width: 90%;
-                height: auto;
-                border-radius: 20px;
-                margin: 2rem auto;
-                display: flex;
-                justify-content: center;
-
-            }
-
-            .section3 .div2 h1 {
-                display: none;
-            }
-
-            .section3 .div2 .div4 {
-                padding-top: 0rem;
-                border-left: none;
-            }
-
-            .section3 .div2 .div4 p {
-                font-size: 5vw;
-                padding: 0rem;
-                padding-top: 0rem;
-                line-height: 7vw;
-                word-spacing: 2vw;
-                border-left: none;
-            }
-        }
-
-        /* Card1 */
-
-        .section5 {
-            margin: auto;
-            padding: 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            max-width: fit-content;
-            width: 95%;
-            max-height: fit-content;
-        }
-
-        .section5.in-view {
-            animation: section5 forwards 2.5s;
-        }
-
-        @keyframes section5 {
-            from {
-                transform: translateX(50rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .section5 .col-md-4 {
-            margin: 0;
-            padding: 0;
-            background-color: #081c15;
-            text-align: center;
-            max-height: fit-content;
-        }
-
-        .section5 .col-md-4 .h1 {
-            display: none;
-            color: darkorange;
-            font-size: 15vw;
-            margin-top: 3rem;
-        }
-
-        .section5 .col-md-4 img {
-            text-align: center;
-            margin: 5rem auto;
-            width: 80%;
-        }
-
-        .section5 .col-md-8 {
-            padding-top: 1rem;
-            padding-right: 2rem;
-            padding-left: 1rem;
-            padding-bottom: 1rem;
-            margin: 0;
-            max-height: fit-content;
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .section5 .col-md-8 .h1 {
-            font-size: 5vw;
-            text-align: center;
-        }
-
-        .section5 .col-md-8 .p {
-            font-size: 2vw;
-            text-align: justify;
-            border-bottom: #081c15 1px solid;
-            padding-bottom: 1rem;
-            line-height: 4vw;
-            word-spacing: 0.6vw;
-        }
-
-        .section5 .col-md-8 .p br {
-            display: none;
-        }
-
-        .section5 .col-md-8 .p a {
-            text-decoration: none;
-            color: #081c15;
-        }
-
-        .section5 .col-md-8 .p a:hover {
-            color: #081c15;
-        }
-
-
-        .section5 .col-md-8 .headings {
-            padding: 0;
-            margin: 0;
-            margin-top: 0.5rem;
-        }
-
-        .section5 .col-md-8 .headings .col-md-4 {
-            background-color: transparent;
-            margin: 0;
-
-        }
-
-        .section5 .col-md-8 .headings .col-md-4 a {
-            text-decoration: none;
-        }
-
-        .section5 .col-md-8 .headings .col-md-4 img {
-            background-color: transparent;
-            margin: 0rem auto;
-            width: 40%;
-        }
-
-        .section5 .headings .heading1 {
-            margin: 0rem;
-            text-align: center;
-            font-size: 3.5vw;
-            padding: 1rem;
-        }
-
-        .section5 .headings .heading2 {
-            margin: 0rem;
-            text-align: center;
-            font-size: 3.5vw;
-            padding: 1rem;
-        }
-
-        .section5 .headings .heading3 {
-            margin: 0rem;
-            text-align: center;
-            font-size: 3.5vw;
-            padding: 1rem;
-        }
-
-        .section5 .headings span {
-            padding: 0.2rem;
-            color: #081c15;
-            border-bottom: 0.5vw solid #081c15;
-            border-radius: 10px;
-        }
-
-
-        /* Responsive Adjustments */
-        @media (max-width: 991px) {
-
-            .section5 .col-md-4,
-            .section5 .col-md-8 {
-                padding: 1rem;
-            }
-
-            .section5 .col-md-8 {
-                padding-right: 1.5rem;
-            }
-
-            .section5 .headings .heading1 span,
-            .section5 .headings .heading2 span,
-            .section5 .headings .heading3 span {
-                font-size: 3vw;
-                padding: 0.5rem;
-            }
-        }
-
-        @media (max-width: 767px) {
-
-            .section5 .col-md-8 {
-                padding: 1rem;
-                padding-left: 0.7rem;
-                padding-right: 0.7rem;
-            }
-
-            .section5 .col-md-8 .h1 {
-                display: none;
-                font-size: 8vw;
-            }
-
-            .section5 .col-md-8 .p {
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                font-size: 4vw;
-                line-height: 7vw;
-                word-spacing: 2vw;
-            }
-
-            .section5 .col-md-8 .p br {
-                display: block;
-            }
-
-            .section5 .col-md-4 .h1 {
-                display: block;
-
-            }
-
-            .section5 .col-md-8 .headings .col-md-4 {
-                text-align: center;
-            }
-
-            .section5 .col-md-8 .headings .col-md-4 img {
-                width: 20%;
-            }
-
-            .section5 .headings .heading1 span,
-            .section5 .headings .heading2 span,
-            .section5 .headings .heading3 span {
-                font-size: 5vw;
-                padding: 0.5rem;
-            }
-        }
-
-        /* card2 */
-
-        .section6 {
-            margin: auto;
-            margin-top: 4rem;
-            margin-bottom: 3rem;
-            padding: 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            max-width: fit-content;
-            width: 95%;
-            max-height: fit-content;
-        }
-
-        .section6.in-view {
-            animation: section6 2.5s forwards;
-        }
-
-        @keyframes section6 {
-            from {
-                transform: translateX(-50rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .section6 .col-md-4 {
-            margin: 0;
-            padding: 0;
-            background-color: #081c15;
-            text-align: center;
-            max-height: fit-content;
-        }
-
-        .section6 .col-md-4 .h1 {
-            display: none;
-            color: darkorange;
-            font-size: 12vw;
-            margin-top: 4rem;
-        }
-
-        .section6 .col-md-4 img {
-            text-align: center;
-            margin: 8rem auto;
-            width: 80%;
-        }
-
-        .section6 .col-md-8 {
-            padding-top: 1rem;
-            padding-right: 2rem;
-            padding-left: 1rem;
-            padding-bottom: 1rem;
-            margin: 0;
-            max-height: fit-content;
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .section6 .col-md-8 .h1 {
-            font-size: 5vw;
-            text-align: center;
-        }
-
-        .section6 .col-md-8 .p {
-            font-size: 2vw;
-            text-align: justify;
-            border-bottom: #081c15 1px solid;
-            padding-bottom: 1rem;
-            line-height: 4vw;
-            word-spacing: 0.6vw;
-        }
-
-        .section6 .col-md-8 .p br {
-            display: none;
-        }
-
-        .section6 .col-md-8 .p a {
-            text-decoration: none;
-            color: #081c15;
-        }
-
-        .section6 .col-md-8 .p a:hover {
-            color: #081c15;
-        }
-
-
-        .section6 .col-md-8 .headings {
-            padding: 0;
-            margin: 0;
-            margin-top: 0.5rem;
-        }
-
-        .section6 .col-md-8 .headings .col-md-6 {
-            background-color: transparent;
-            margin: 0;
-
-        }
-
-        .section6 .col-md-8 .headings .col-md-6 a {
-            text-decoration: none;
-        }
-
-
-        .section6 .col-md-8 .headings .col-md-6 img {
-            background-color: transparent;
-            margin: 0rem auto;
-            width: 20%;
-        }
-
-        .section6 .headings .heading1 {
-            margin: 0rem;
-            text-align: center;
-            font-size: 3vw;
-            padding: 1rem;
-        }
-
-        .section6 .headings .heading2 {
-            margin: 0rem;
-            text-align: center;
-            font-size: 3vw;
-            padding: 1rem;
-        }
-
-        .section6 .headings .heading3 {
-            margin: 0rem;
-            text-align: center;
-            font-size: 3vw;
-            padding: 1rem;
-        }
-
-        .section6 .headings .heading4 {
-            margin: 0rem;
-            text-align: center;
-            font-size: 3vw;
-            padding: 1rem;
-        }
-
-        .section6 .headings span {
-            padding: 0.2rem;
-            color: #081c15;
-            border-bottom: 0.5vw solid #081c15;
-            border-radius: 10px;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 991px) {
-
-            .section6 .col-md-4,
-            .section6 .col-md-8 {
-                padding: 1rem;
-            }
-
-            .section6 .col-md-8 {
-                padding-right: 1.5rem;
-            }
-
-            .section6 .headings .heading1 span,
-            .section6 .headings .heading2 span,
-            .section6 .headings .heading3 span,
-            .section6 .headings .heading4 span {
-                font-size: 3vw;
-                padding: 0.5rem;
-            }
-        }
-
-        @media (max-width: 767px) {
-
-            .section6 .col-md-8 {
-                padding: 1rem;
-                padding-left: 1.2rem;
-                padding-right: 1.2rem;
-            }
-
-            .section6 .col-md-8 .h1 {
-                display: none;
-                font-size: 8vw;
-            }
-
-            .section6 .col-md-8 .p {
-                font-size: 4vw;
-                line-height: 7vw;
-                word-spacing: 2vw;
-            }
-
-            .section6 .col-md-8 .p br {
-                display: block;
-            }
-
-            .section6 .col-md-8 .headings .col-md-6 a br {
-                display: none;
-            }
-
-
-            .section6 .col-md-4 .h1 {
-                display: block;
-            }
-
-            .section6 .col-md-8 .headings .col-md-6 {
-                text-align: center;
-            }
-
-            .section6 .col-md-8 .headings .col-md-6 img {
-                width: 20%;
-            }
-
-            .section6 .headings .heading1 span,
-            .section6 .headings .heading2 span,
-            .section6 .headings .heading3 span,
-            .section6 .headings .heading4 span {
-                font-size: 5vw;
-                padding: 0.5rem;
-            }
-        }
-
-        /* section4/carousel */
-
-        .section4 {
-            padding: 2rem;
-            margin: 0;
-            background: rgba(255, 255, 255, 0.4);
-            max-height: fit-content;
-
-        }
-
-        .section4 h2 {
-            font-size: 6vw;
-        }
-
-        .carousel-item .col-md-7 {
-            padding-top: 2rem;
-            padding-left: 80px;
-        }
-
-        .section4 .div1.in-view {
-            animation: col-md-7 forwards 1.5s;
-        }
-
-        @keyframes col-md-7 {
-            from {
-                transform: translateX(-60rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-
-        .carousel-item .col-md-5 {
-            margin: 0rem;
-            padding-left: 10rem;
-            padding-right: 3rem;
-            padding-top: 2rem;
-            padding-bottom: 0rem;
-        }
-
-        .section4 .div2.in-view {
-            animation: col-md-5 forwards 1.5s;
-        }
-
-        @keyframes col-md-5 {
-            from {
-                transform: translateX(60rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .section4 h2.in-view {
-            font-size: 5vw;
-            text-transform: capitalize;
-            animation: section4-h2 forwards 1.5s;
-        }
-
-        @keyframes section4-h2 {
-            from {
-                transform: translateY(-10rem);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .quote {
-            font-size: 1.5rem;
-            font-style: italic;
-            margin: 20px 0;
-            color: #081c15;
-            text-align: justify;
-        }
-
-        .quotation {
-            font-size: 2rem;
-            color: #007bff;
-        }
-
-        .tweet-icons.in-view {
-            text-align: end;
-            margin-top: 0.5rem;
-            margin-bottom: 1rem;
-            animation: icons forwards 2s;
-        }
-
-        @keyframes icons {
-            from {
-                transform: translateY(40rem);
-            }
-
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .tweet-icons a {
-            text-decoration: none;
-            /* Removed underline from anchor tags */
-        }
-
-        .tweet-icons a .like {
-            width: 45px;
-            margin-right: 20px;
-            transition: transform 0.1s;
-        }
-
-        .tweet-icons a .like:hover {
-            transform: scale(1.2);
-        }
-
-        .tweet-icons a .comment {
-            width: 50px;
-            transition: transform 0.1s;
-        }
-
-        .tweet-icons a .comment:hover {
-            transform: scale(1.2);
-        }
-
-        .carousel-inner video {
-            height: auto;
-            min-height: 20rem;
-            width: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            top: 50%;
-            height: 50px;
-            width: 50px;
-        }
-
-        .carousel-control-prev {
-            left: -1rem;
-        }
-
-        .carousel-control-next {
-            right: -1rem;
-        }
-
-        @media (max-width: 991px) {
-            .carousel-item .col-md-5 {
-                padding-left: 5rem;
-
-            }
-        }
-
-        @media (max-width: 767px) {
-
-            .section4 h2 {
-                font-size: 8vw;
-            }
-
-            .carousel-item .col-md-7 {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-
-            .carousel-inner video {
-                height: 100%;
-                width: 100%;
-                display: block;
-                margin: 0 auto;
-            }
-
-            .carousel-item .col-md-5 {
-                padding-bottom: 5rem;
-                padding-left: 1rem;
-                padding-right: 1rem;
-                padding-top: 1rem;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                top: 15%;
-                bottom: auto;
-                transform: none;
-                height: 50px;
-                width: 50px;
-            }
-
-            .carousel-control-prev {
-                left: -10px;
-            }
-
-            .carousel-control-next {
-                right: -10px;
-            }
-        }
-
-        hr {
-            border: 0;
-            height: 0.2rem;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0));
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            margin-left: 20rem;
-            margin-right: 20rem;
-            animation: hr forwards 1.5s;
-        }
-
-        @keyframes hr {
-            from {
-                transform: translateX(-80rem);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        @media (max-width: 1300px) {
-            hr {
-                margin-left: 17rem;
-                margin-right: 17rem;
-            }
-        }
-
-        @media (max-width: 1130px) {
-            hr {
-                margin-left: 15rem;
-                margin-right: 15rem;
-            }
-        }
-
-        @media (max-width: 991px) {
-            hr {
-                margin-left: 10rem;
-                margin-right: 10rem;
-            }
-        }
-
-        @media (max-width: 767px) {
-            hr {
-                margin-left: 5rem;
-                margin-right: 5rem;
-            }
-        }
-
-
-
-        .section1,
-        .section2,
-        .section3,
-        .section4,
-        .section5,
-        .section6 {
-            overflow: hidden;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LetsExplore</title>
+  <link rel="icon" href="Logo/Logo colorful.jpeg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #a48dce;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .navbar-brand {
+      font-size: xx-large;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      border-radius: 25%;
+    }
+
+    .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      color: #f0f0f0 !important;
+    }
+
+    /* Carousel */
+    .carousel-item img,
+    .carousel-item video {
+      width: 100%;
+      height: auto;
+      max-height: 90vh;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      background: rgba(150, 148, 148, 0.6);
+      padding: 10px;
+      border-radius: 20px;
+      color: white;
+    }
+
+    .carousel-caption p {
+      text-align: justify;
+    }
+
+    .carousel-caption button {
+      background-color: transparent;
+      border: 1px solid;
+
+    }
+
+    .carousel-caption button:hover {
+      background-color: #8b6eb2;
+      border: none;
+    }
+
+    /* Cards Style */
+
+    .card {
+      margin: 15px 0;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+      box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card-body {
+      background: #f0f0f0;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #a48dce;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #6c757d;
+      text-align: justify;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: #a48dce;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+
+    .btn-primary:hover {
+      background-color: #8b6eb2;
+    }
+
+
+
+    /* Modal style */
+
+    .modal-content {
+      background-color: white;
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    .modal-header {
+      background-color: #a48dce;
+      color: white;
+      border-bottom: none;
+    }
+
+    .modal-title {
+      font-weight: bold;
+    }
+
+    .embed-responsive-16by9 {
+      padding-bottom: 56.25%;
+      /* 16:9 aspect ratio */
+      position: relative;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .embed-responsive-16by9 .embed-responsive-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* newslatter */
+    section {
+      border-top: #6c757d solid;
+      color: #6c757d;
+    }
+
+    /* Footer style */
+
+    .footer {
+      background-color: #a48dce;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer .social-icons a {
+      margin: 0 10px;
+      color: white;
+    }
+
+    .footer .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .footer .back-to-top a {
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="p-0 m-0" id="top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand"> 
-                    <b>Arif Rind</b>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-capitalize fs-5" aria-current="page" style="color: #40916c;">
-                                <span>home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize fs-5" href="about.html">
-                                <span>about</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize fs-5" href="social_welfare.html">
-                                <span>social welfare</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize fs-5" href="events.html">
-                                <span>events</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize fs-5" href="contact.html">
-                                <span>contact us</span>
-                            </a>
-                        </li>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- section1 -->
-    <div class="container-fluid section1">
-        <div class="row">
-            <div class="col-md-6 fs-1 div3">
-                <h1>
-                    <span class="span1">UNITY.</span>
-                    <br>
-                    <span class="span2">BELIEF.</span>
-                    <br>
-                    <span class="span3">COURAGE.</span>
-                </h1>
-            </div>
-
-            <div class="col-md-6 div1"> <img src="Pics/Arif1_BG.png" alt="pic" class="pic1"></div>
-            <div class="col-md-6 fs-1 div2">
-                <h1>
-                    <span class="span1">UNITY.</span>
-                    <br>
-                    <span class="span2">BELIEF.</span>
-                    <br>
-                    <span class="span3">COURAGE.</span>
-                </h1>
-            </div>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="Logo/Logo colorful.jpeg" alt="logo"> Lets Explore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-capitalize fs-5" aria-current="page" href="Index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize fs-5" href="About.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize fs-5" href="#contact-us">contact us</a>
+            </li>
         </div>
-    </div>
-    <!-- section2 -->
-    <div class="container-fluid section2 section">
-        <div class="row">
-            <div class="col-md-5 div1">
-                <div class="div2">
-                    <h1>
-                        My Message
-                    </h1>
-
-                </div>
-            </div>
-            <div class="col-md-7 div3">
-                <p>As a young politician hailing from the remote yet resilient Naseerabad region of Balochistan,
-                    Pakistan, My message is Peace. I am a peace ambassidor dedicated to bring about positive change
-                    and development to our community. Representing Pakistan Tehreek-e-Insaf, I strive to embody the
-                    values of justice, integrity, and progress. My journey in politics began in 2006, and over the
-                    years, I have had the privilege of serving in various capacities, including as district
-                    president and secretary general of the Insaf youth wing.
-                    <br>
-                    In 2024, I was honored to receive a ticket for the National Assembly from NA-255 Jafarabad. With
-                    your support, I am committed to addressing the challenges faced by our people and working
-                    tirelessly to ensure a brighter, more prosperous future for all.
-                </p>
-            </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+  </header>
+  <main class="container-fluid py-0 px-0 ">
+    <!-- carousel starts -->
+    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="Pics/hi Robot.jpg" class="d-block w-100" alt="Welcome">
+          <div class="carousel-caption d-block">
+            <h1>Welcome to Our World</h1>
+            <hr>
+            <p class="fs-3 d-none d-sm-block">Explore the latest in tech and AI. From groundbreaking updates
+              to innovative hacks, get insights and stay
+              ahead in the ever-evolving tech landscape.</p>
+            <button type="button" class="btn btn-primary text-capitalize fs-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Subscribe our Newsletter</button>
+          </div>
         </div>
-    </div>
-
-    <!-- section3 -->
-    <div class="container-fluid section3">
-        <div class="row">
-            <div class="col-md-5 div1">
-                <div class="mobile">
-                    <h1>My Vision</h1>
-                </div>
-                <img src="Pics/Arif5.jpg" alt="pic" class="pic3">
-            </div>
-            <div class="col-md-7 div2">
-                <div class="div3">
-                    <h1>My Vision</h1>
-                    <div class="div4">
-                        <p>
-                            My goal is to transform Pakistan especially my ancestral remote areas into a beacon of
-                            progress and prosperity, ensuring that every citizen has access to basic amenities, quality
-                            education, and healthcare. I envision a region where economic opportunities are abundant,
-                            and the voices of the people are heard and respected. By leveraging the principles and
-                            policies of Pakistan Tehreek-e-Insaf, I aim to foster transparency, accountability, and
-                            sustainable development. Together, we can create an inclusive society where our youth are
-                            empowered, our traditions are honored, and our future is secured. My vision is to lead
-                            Balochistan into an era of unparalleled growth and unity, where every individual's potential
-                            is realized and their rights are protected.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="Pics/Ai in medicine2.jpg" class="d-block w-100" alt="Applications">
+          <div class="carousel-caption d-block">
+            <h1>AI Applications</h1>
+            <hr>
+            <p class="fs-3 d-none d-sm-block">Discover practical applications of artificial intelligence in various fields. Learn
+              how AI is transforming industries.</p>
+            <button class="btn btn-primary text-capitalize fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Subscribe our Newsletter
+            </button>
+          </div>
         </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="Pics/Computer lab.jpg" class="d-block w-100" alt="Insights">
+          <div class="carousel-caption d-block">
+            <h1>AI Insights & Innovations</h1>
+            <hr>
+            <p class="fs-3 d-none d-sm-block">Delve into the fascinating world of artificial intelligence.
+              Read my reviews, learn about the latest
+              advancements, and discover practical AI applications from my unique perspective.</p>
+            <button class="btn btn-primary text-capitalize fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Subscribe our Newsletter
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="Pics/Tech Desk.jpg" class="d-block w-100" alt="Desk">
+          <div class="carousel-caption d-block">
+            <h1>Tech Reviews & Hacks</h1>
+            <hr>
+            <p class="fs-3 d-none d-sm-block">Get honest reviews on the newest gadgets and software. Learn
+              tech hacks that can simplify your life and
+              boost your productivity. Join me as I share my personal take on the tech trends shaping our future.</p>
+            <button type="button" class="btn btn-primary text-capitalize fs-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Subscribe our Newsletter
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    <!-- carousel ends -->
 
-    <!-- youtube carusel -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSc2_VRGZ5gYM53PbHmsprps3s9GTVO1KrqxFkAf2lfnAtY8vA/viewform?embedded=true"
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends -->
+
+    <!-- card starts -->
+    <div class="container py-5">
+      <h2 class="text-center mb-5" style="color: #a48dce; font-weight: bold;">Featured Posts</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Pics/AI cheering.jpg" class="card-img-top" alt="Gadget Reviews">
+            <div class="card-body">
+              <h5 class="card-title text-capitalize">AI break through</h5>
+              <p class="card-text text-capitalize">Researchers develop new training technique that aims to make AI
+                systems less socially biased.</p>
+              <a href="Card1.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Pics/Ai in medicine.jpg" class="card-img-top" alt="Software Insights">
+            <div class="card-body">
+              <h5 class="card-title text-capitalize">Robots for treatment</h5>
+              <p class="card-text text-capitalize">Meet <big>CARMEN</big>, a robot that helps people with mild cognitive
+                impairment.</p>
+              <a href="Card2.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Pics/AI & human.jpg" class="card-img-top" alt="Personal Experiences">
+            <div class="card-body">
+              <h5 class="card-title">Robots face the future</h5>
+              <p class="card-text">Researchers have found a way to bind engineered skin tissue to the complex forms of
+                humanoid robots.</p>
+              <a href="Card3.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Pics/AI Chess.jpg" class="card-img-top" alt="Gadget Reviews">
+            <div class="card-body">
+              <h5 class="card-title">The Future of AI</h5>
+              <p class="card-text">The rapid advancements in artificial intelligence (AI) and machine learning have
+                raised profound questions about the future of human creativity and the very essence of what it means to
+                be human.</p>
+              <a href="Card4.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Pics/Screen at night.jpg" class="card-img-top" alt="Software Insights">
+            <div class="card-body">
+              <h5 class="card-title">Brain Health and Creativity</h5>
+              <p class="card-text">In the digital age, screen time and social media have become integral parts of daily
+                life, particularly for the younger generation.</p>
+              <a href="Card5.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Pics/openai.jpg" class="card-img-top" alt="Personal Experiences">
+            <div class="card-body">
+              <h5 class="card-title">Mastering AI Conversations</h5>
+              <p class="card-text">Ever wondered how to wield the power of AI chatbots like a pro? Here is A Beginner’s
+                Guide to Crafting Effective Prompts.</p>
+              <a href="Card6.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cards end -->
+
+    <!-- Newsletter stats -->
+    <section class="mt-5 py-5" style="background-color: #f0f0f0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ms-auto">
+            <div class="text-center mb-4">
+              <h3 class="mb-3" style="color: #a48dce;">Subscribe to Our Newsletter</h3>
+              <p>Stay updated with our latest news and updates!</p>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                  placeholder="Enter your email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-1 ms-auto"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter ends -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
     <div class="container">
-        <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <div class="container"
-                        style="display: flex; justify-content: center; margin-top: 1rem; margin-bottom: 2rem;">
-                        <iframe style="border-radius: 10px;" width="1060" height="500"
-                            src="https://www.youtube.com/embed/x55I98yoO9g?si=4ER_NGmCXN7pdI5w"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div class="container"
-                        style="display: flex; justify-content: center; margin-top: 1rem; margin-bottom: 2rem;">
-                        <iframe style="border-radius: 10px;" width="1060" height="500"
-                            src="https://www.youtube.com/embed/xBIcbgQx0mc?si=9HK2XduvVzUZGdkM"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div class="container"
-                        style="display: flex; justify-content: center; margin-top: 1rem; margin-bottom: 2rem;">
-                        <iframe style="border-radius: 10px;" width="1060" height="500"
-                            src="https://www.youtube.com/embed/PfFcQ9EBoRI?si=8RWA_sfUX6gxCDY3"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0" id="contact-us">
+          <h5>Contact Us</h5>
+          <p>Email: saadatyaseen309@gmail.com</p>
+          <p>Phone: +92 349 6291309</p>
         </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://wa.me/923496291309" aria-label="whatsapp"><img src="Icons/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://x.com/saadat_yaseen" aria-label="Twitter"><img src="Icons/twitter X.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/saadat_yaseen" aria-label="Instagram"><img src="Icons/instagram.png"
+                alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/saadat-yaseen-95805b1b9/" aria-label="LinkedIn"><img
+                src="Icons/Linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-top: 1px solid white; margin: 20px 0;">
+      <p class="mb-0">© 2024 Lets Explore. All rights reserved.</p>
     </div>
+  </footer>
 
-
-
-
-    <!-- card1 -->
-    <div class="container section5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="h1">
-                    About
-                </div>
-                <img src="Icons/information-button.png" alt="">
-            </div>
-            <div class="col-md-8">
-                <div class="h1">
-                    About
-                </div>
-                <div class="p">
-                    Arif Rind belongs to a notable Rind Baloch family of Jaffarabad. Since joining Pakistan Tehreek-e-Insaf in 2009, he has held various
-                    significant positions, including District President of Jafarabad and Provincial Deputy General
-                    Secretary of Balochistan, leading numerous membership campaigns and political activities across
-                    Balochistan.
-                    <br>
-                    <a href="about.html">
-                        Read more:
-                    </a>
-                </div>
-                <div class="container headings">
-                    <div class="row">
-                        <div class="col-md-4 heading1">
-                            <a href="about.html#Background">
-
-                                <img src="Icons/background-check-dark.png" alt="">
-
-                                <span>Background</span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 heading2">
-                            <a href="about.html#Education">
-
-                                <img src="Icons/mortarboard-dark.png" alt="">
-
-                                <span>Education</span>
-                            </a>
-                        </div>
-                        <div class="col-md-4 heading3">
-                            <a href="about.html#Politics">
-
-                                <img src="Icons/speech-dark.png" alt="">
-
-                                <span>Politics</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Card2 -->
-    <div class="container section6">
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="h1">
-                    Social Welfare
-                </div>
-                <img src="Icons/social-media-management.png" alt="">
-            </div>
-
-            <div class="col-md-8">
-                <div class="h1">
-                    Social Welfare
-                </div>
-                <div class="p">
-                    Arif Rind's mission is to create a significant impact on the lives of individuals and communities
-                    through dedicated social welfare activities. This section highlights his diverse initiatives and
-                    programs aimed at improving the quality of life for those in need, fostering a spirit of compassion,
-                    and empowering the youth to contribute positively to society.
-                    <br>
-                    <a href="social_welfare.html">
-                        Read more:
-                    </a>
-                </div>
-                <div class="container headings">
-                    <div class="row">
-                        <div class="col-md-6 heading1">
-                            <a href="social_welfare.html#Health-Care">
-
-                                <img src="Icons/donation-dark.png" alt="">
-                                <br>
-                                <span>Health Care</span>
-                            </a>
-                        </div>
-                        <div class="col-md-6 heading2">
-                            <a href="social_welfare.html#Youth-Activism">
-
-                                <img src="Icons/activism-dark.png" alt="">
-                                <br>
-                                <span>Youth Activism</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 heading3">
-                            <a href="social_welfare.html#Ramadan-Aid">
-
-                                <img src="Icons/gift-box.png" alt="">
-                                <br>
-                                <span>Ramadan Aid</span>
-                            </a>
-                        </div>
-                        <div class="col-md-6 heading4">
-                            <a href="social_welfare.html#Child-Education">
-
-                                <img src="Icons/reading-book-dark.png" alt="">
-                                <br>
-                                <span>Crisis Management</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- section4 -->
-    <div class="container-fluid section4">
-        <h2 class="text-center text-capitalize">Popular tweets</h2>
-        <hr>
-        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel"
-            data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 div1">
-                                <bdo dir="rtl">
-                                    <blockquote class="quote">
-                                        <span class="quotation">”</span>
-                                        ہم بلوچ اپنے قول و فعل کے پکے ہیں ۔
-                                        <br><br>
-                                        خان صاحب میں بلوچ کی اولاد ہوں میرا تعلق بلوچستان کی غیرت مند پہاڑوں صحراوں
-                                        اور
-                                        ریگستان سے ہے ۔
-                                        <br><br>
-                                        میں نے اس حقیقی آزادی کے جنگ میں آپ کے ساتھ جو وعدہ کیا ہے میں اپنی آخری
-                                        سانس تک
-                                        آپ کے ساتھ کھڑا رہوں گا انشاء اللہ ۔
-                                        <br><br>
-                                        ImranKhanPTI@
-                                        <br>
-                                        #میں_تمہارے_ساتھ_ہوں
-                                        <span class="quotation">“</span>
-                                    </blockquote>
-                                </bdo>
-                                <div class="tweet-icons">
-                                    <a href="https://twitter.com/intent/like?tweet_id=1659228016533184514"
-                                        target="_blank" class="like-link">
-                                        <img src="Icons/like filled.png" alt="" class="like">
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?in_reply_to=1659228016533184514"
-                                        target="_blank" class="comment-link">
-                                        <img src="Icons/comment_blue.png" alt="" class="comment">
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-5 div2">
-                                <video class="d-block w-100" controls>
-                                    <source src="Videos/tweet1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 div1">
-                                <bdo dir="rtl">
-                                    <blockquote class="quote">
-                                        <span class="quotation">”</span>
-                                        آپ سب کا ووٹ میرے پاس عمران خان کی امانت ہوگا۔ انشاللہ 8 فروری کو NA-255 کی
-                                        عوام
-                                        وکٹ پر مہر لگا کر مافیا کو عبرتناک شکست دیں گی۔
-                                        <br><br>
-                                        پاکستان تحریک انصاف کے نامزد امیدوار برائے حلقہ NA-255 محمد عارف رند کا اپنے
-                                        حلقے کی عوام کے نام خصوصی پیغام:
-                                        <br><br>
-                                        #انتخابی_نشان_عمران_خان
-                                        <br>
-                                        #وکٹ_پہ_ٹھپہ
-                                        <br>
-
-
-                                        NA255 # <br> arifrind#
-
-                                        <span class="quotation">“</span>
-                                    </blockquote>
-                                </bdo>
-                                <div class="tweet-icons">
-                                    <a href="https://twitter.com/intent/like?tweet_id=1749324337323086095"
-                                        target="_blank" class="like-link">
-                                        <img src="Icons/like filled.png" alt="" class="like">
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?in_reply_to=1749324337323086095"
-                                        target="_blank" class="comment-link">
-                                        <img src="Icons/comment_blue.png" alt="" class="comment">
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-5 div2">
-                                <video class="d-block w-100" controls>
-                                    <source src="Videos/tweet2.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 div1">
-                                <bdo dir="rtl">
-                                    <blockquote class="quote">
-                                        <span class="quotation">”</span>
-                                        میرے قائد عمران خان کے حکم پر این اے 255 جعفرآباد میں عظیم الشان ریلی
-                                        میں عوام کی بھرپور شرکت
-                                        <br><br>
-                                        بلوچستان میں پاکستان زندہ آباد کا نعرہ لگانے والے غیور پاکستانی اپنے
-                                        گھروں سے نکل چکے ہیں۔
-                                        <br><br>
-                                        #خان_کی_کال_پر_لبیک
-                                        <span class="quotation">“</span>
-                                    </blockquote>
-                                </bdo>
-                                <div class="tweet-icons">
-                                    <a href="https://twitter.com/intent/like?tweet_id=1751553392223068649"
-                                        target="_blank" class="like-link">
-                                        <img src="Icons/like filled.png" alt="" class="like">
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?in_reply_to=1751553392223068649"
-                                        target="_blank" class="comment-link">
-                                        <img src="Icons/comment_blue.png" alt="" class="comment">
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-5 div2">
-                                <video class="d-block w-100" controls>
-                                    <source src="Videos/tweet3.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7 div1">
-                                <bdo dir="rtl">
-                                    <blockquote class="quote">
-                                        <span class="quotation">”</span>
-                                        اپنی استطاعت سے بڑھ کر الحمدللہ لوگوں تک پہنچ رہے ہیں اور نوجوانوں کو عمران
-                                        خان
-                                        کا پیغام پہنچا رہے ہیں۔ 8 فروری کو بلوچستان میں حقیقی تبدیلی آئے گی جب عمران
-                                        خان
-                                        کے نوجوان جاگیردارانہ نظام کو شکست دے کر دکھائیں
-                                        گے۔
-                                        <br>
-                                        NA255 #<br>Wickets#
-                                        <span class="quotation">“</span>
-                                    </blockquote>
-                                </bdo>
-                                <div class="tweet-icons">
-                                    <a href="https://twitter.com/intent/like?tweet_id=1753703849448362186"
-                                        target="_blank" class="like-link">
-                                        <img src="Icons/like filled.png" alt="" class="like">
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?in_reply_to=1753703849448362186"
-                                        target="_blank" class="comment-link">
-                                        <img src="Icons/comment_blue.png" alt="" class="comment">
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-5 div2">
-                                <video class="d-block w-100" controls>
-                                    <source src="Videos/tweet4.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="footer text-center">
-        <div class="container-fluid div1">
-            <div class="row">
-                <div class="col-md-4 mb-3 mb-md-0 div2 animated">
-                    <h5>Write us</h5>
-                    <p>Email: <a href="mailto:arifrind15@gmail.com" class="email">arifrind15@gmail.com</a></p>
-                    <br>
-                    <h5>Follow Us</h5>
-                    <div class="social-icons">
-                        <a href="https://x.com/ArifRindPTI?t=T3cHUKG6ds0zGL0Bv8tBOw&s=09" aria-label="Twitter"
-                            target="_blank">
-                            <img src="Icons/twitter.png" alt="Twitter">
-                        </a>
-                        <a href="https://www.instagram.com/arifrindofficial?igsh=MWg1MzZwZWJveGx5NA=="
-                            aria-label="Instagram" target="_blank">
-                            <img src="Icons/instagram.png" alt="Instagram">
-                        </a>
-                        <a href="https://www.facebook.com/arifrind15?mibextid=ZbWKwL" aria-label="facebook"
-                            target="_blank">
-                            <img src="Icons/facebook.png" alt="facebook">
-                        </a>
-                        <a href="https://www.youtube.com/@arifrind" aria-label="youtube" target="_blank">
-                            <img src="Icons/youtube.png" alt="youtube">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0 div3 animated">
-                    <h5>Useful links</h5>
-                    <div class="Menu">
-                        <a href="#top">Home</a>
-                        <br>
-                        <a href="about.html">About</a>
-                        <br>
-                        <a href="events.html">Events</a>
-                        <br>
-                        <a href="contact.html">Contact Us</a>
-                        <br>
-                        <a href="social_welfare.html">Social Work</a>
-                        <br>
-                        <a href="#top">Back to Top</a>
-                    </div>
-                </div>
-                <div class="col-md-4 div4 animated">
-                    <h5>Address</h5>
-                    <div>
-                        <p>Dera Allah Yar, Jafarabad, <br> Balochistan Province of Pakistan</p>
-                        <iframe loading="lazy"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14042.03334735356!2d68.34988474999999!3d28.37371055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393477e237294b09%3A0x6de34fb11c624bad!2sDera%20Allah%20Yar%2C%20Jaffarabad%2C%20Balochistan!5e0!3m2!1sen!2s!4v1721950268345!5m2!1sen!2s"
-                            title="Dera Allah Yar, Jafarabad" aria-label="Dera Allah Yar, Jafarabad"></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div class="copyright animated">
-                <hr>
-                <p>© 2024 Muhammad Arif Rind. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="Script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
