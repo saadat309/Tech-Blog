@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="icon" href="Pics/Arif5.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .main {
+            /* border: 1px solid #081C15; */
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgb(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.2);
+            margin: 1 auto;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            padding: 0;
+            padding-top: 1rem;
+            overflow: hidden;
+        }
+
+        .main h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 3.5vw;
+        }
+
+        .main h1 span {
+            padding: 0.2rem;
+            border-bottom: 0.5vw solid darkorange;
+            border-radius: 10px;
+        }
+
+
+        .imgdiv {
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+
+        .pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .col-md-6 {
+            padding: 0;
+        }
+
+        .textdiv1 {
+            padding-left: 1rem;
+            padding-right: 2rem;
+        }
+
+        .textdiv2 {
+            padding-left: 2rem;
+            padding-right: 1rem;
+        }
+
+        .textdiv3 {
+            padding-left: 1rem;
+            padding-right: 2rem;
+        }
+
+        .textdiv4 {
+            padding-left: 2rem;
+            padding-right: 1rem;
+        }
+
+        .col-md-6 p {
+            padding: 0;
+            font-size: 2vw;
+            text-align: justify;
+            line-height: 4vw;
+            word-spacing: 0.5vw;
+        }
+
+        .lg {
+            display: block;
+        }
+
+        .sm {
+            display: none;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            border: none;
+            box-shadow: 0 4px 8px #081C15;
+            border-radius: 10px;
+            background: transparent;
+            width: fit-content;
+            height: fit-content;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 2vw;
+        }
+
+        .button:hover {
+            background-color: darkorange;
+            transform: scale(1.05);
+        }
+
+
+
+
+        @media (max-width: 767px) {
+
+            .lg {
+                display: none;
+            }
+
+            .sm {
+                display: block;
+            }
+
+            .main {
+                margin: 2rem auto;
+                padding: 1rem 0rem;
+            }
+
+            .main h1 {
+                font-size: 6vw;
+                margin-bottom: 0rem;
+            }
+
+            .textdiv1,
+            .textdiv2,
+            .textdiv3,
+            .textdiv4 {
+                padding: 1rem 1rem;
+            }
+
+            .col-md-6 p {
+                font-size: 4vw;
+                padding: 0 1rem;
+                line-height: 7vw;
+                word-spacing: 1vw;
+            }
+
+            .button {
+                width: fit-content;
+                height: fit-content;
+                margin-top: 1rem;
+                margin-bottom: 0rem;
+                font-size: 4.5vw;
+            }
+        }
+
+        /* Gallery */
+
+        .Gallery {
+            margin-top: 1rem;
+            display: none;
+            column-count: 3;
+            column-gap: 0.5rem;
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .fullscreen-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .fullscreen-btn {
+            opacity: 1;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            display: block;
+            margin: 0 auto;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-0 m-0" id="top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <b>Muhammad
+                        Arif Rind</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" aria-current="page" href="index.html">
+                                <span>home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="about.html">
+                                <span>about</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="social_welfare.html">
+                                <span>social welfare</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize fs-5" style="color: #40916c">
+                                <span>events</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="contact.html">
+                                <span>contact us</span>
+                            </a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2024 -->
+
+    <div class="container main">
+        <h1><span>2024 General Election Compaign</span></h1>
+        <div class="row">
+            <div class="col-md-6 imgdiv lg">
+                <img src="Pics\2024\2024 (18).jpg" alt="2024" class="pic">
+            </div>
+            <div class="col-md-6 textdiv1">
+                <p>In the most challenging and hostile elections of 2024, when many were hesitant to contest as PTI
+                    candidates, Arif Rind bravely stood for election in NA-255, one of the toughest and largest
+                    constituencies in Pakistan. He garnered immense support from both the elders and youth of his
+                    constituency. His election campaign was the most energetic, colorful, and esteemed in Balochistan.
+                    Against all odds, he was elected on Form 45.
+                </p>
+                <div class="wrapper"><button type="button" class="button lg" data-target="#gallery1">Show
+                        Gallery</button></div>
+            </div>
+            <div class="col-md-6 imgdiv sm">
+                <img src="Pics\2024\2024 (18).jpg" alt="2024" class="pic">
+            </div>
+            <div class="wrapper"><button type="button" class="button sm" data-target="#gallery1">Show Gallery</button>
+            </div>
+        </div>
+        <div class="Gallery" id="gallery1">
+
+
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (2).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (3).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (4).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (5).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (6).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (7).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (8).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (9).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (10).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (11).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (12).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (13).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (14).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (15).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (16).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (17).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (18).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (19).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024 (20).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2024\2024.jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 2021 -->
+
+    <div class="container main">
+        <h1><span>Azaad Kashmir Elections 2021</span></h1>
+        <div class="row">
+            <div class="col-md-6 textdiv4">
+                <p>In the 2021 AJK elections, Arif Rind served as the in-charge of the election cell for the
+                    Muzaffarabad Division, leading the campaign for PTI candidates across all constituencies in the
+                    region. His efforts were instrumental in mobilizing the youth and enhancing voter interest in the
+                    election process. Through strategic planning and energetic engagement, he effectively galvanized
+                    support, ensuring that the PTI's message resonated with the electorate. His leadership not only
+                    inspired the youth but also reinvigorated the overall campaign, making a significant impact on the
+                    electoral outcomes in Muzaffarabad.</p>
+                <div class="wrapper"><button type="button" class="button lg" data-target="#gallery4">Show
+                        Gallery</button></div>
+            </div>
+            <div class="col-md-6 imgdiv">
+                <img src="Pics/2021/2021.jpg" alt="" class="pic">
+            </div>
+            <div class="wrapper"><button type="button" class="button sm" data-target="#gallery4">Show Gallery</button>
+            </div>
+        </div>
+        <div class="Gallery" id="gallery4">
+
+            <div class="gallery-item">
+                <img src="Pics/2021/2021 (2).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2021\2021 (3).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2021\2021 (4).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2021\2021 (5).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2021\2021 (6).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 2020 -->
+
+    <div class="container main">
+        <h1><span>Gilgit-Baltistan Elections of 2020</span></h1>
+        <div class="row">
+            <div class="col-md-6 imgdiv lg">
+                <img src="Pics\2020\2020.jpg" alt="2013" class="pic">
+            </div>
+            <div class="col-md-6 textdiv3">
+                <p>In the Gilgit-Baltistan elections of 2020, Arif Rind served as the chief organizer for the election
+                    cell in the Baltistan Division. Together with his team, he led the campaign efforts for PTI
+                    candidates across all constituencies in the region. His team developed an app for voter
+                    registration, simplifying the process for the masses to locate and cast their votes. This innovation
+                    significantly enhanced voter participation and streamlined the election process, demonstrating Arif
+                    Rind's commitment to leveraging technology for political engagement.
+                </p>
+                <div class="wrapper"><button type="button" class="button lg" data-target="#gallery3">Show
+                        Gallery</button></div>
+            </div>
+            <div class="col-md-6 imgdiv sm">
+                <img src="Pics\2020\2020.jpg" alt="2013" class="pic">
+            </div>
+            <div class="wrapper"><button type="button" class="button sm" data-target="#gallery3">Show Gallery</button>
+            </div>
+        </div>
+        <div class="Gallery" id="gallery3">
+
+
+
+            <div class="gallery-item">
+                <img src="Pics\2020\2020 (2).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2020\2020 (3).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2020\2020 (4).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2020\2020 (5).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2020\2020 (6).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 2018 -->
+
+    <div class="container main">
+        <h1><span>2018 General Election Compaign</span></h1>
+        <div class="row">
+            <div class="col-md-6 textdiv2">
+                <p>As a youth leader of the Insaf Youth Wing, Arif Rind played a pivotal role in election campaigns
+                    across the country, following special instructions from Imran Khan. He actively participated in
+                    rallies, corner meetings, and door-to-door campaigns in Islamabad, Karachi, various constituencies
+                    in Punjab including Lahore, and in Balochistan. His dynamic presence and engagement were crucial in
+                    rallying support for PTI, demonstrating his dedication to the party's mission and his ability to
+                    connect with voters on a personal level.</p>
+                <div class="wrapper"><button type="button" class="button lg" data-target="#gallery2">Show
+                        Gallery</button></div>
+            </div>
+            <div class="col-md-6 imgdiv">
+                <img src="Pics\2018\2018 (4).jpg" alt="" class="pic">
+            </div>
+            <div class="wrapper"><button type="button" class="button sm" data-target="#gallery2">Show Gallery</button>
+            </div>
+        </div>
+        <div class="Gallery" id="gallery2">
+
+
+            <div class="gallery-item">
+                <img src="Pics\2018\imran-khan1.jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\imran-khan2.jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\imran-khan4.jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\imran-khan5.jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018.jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (2).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (3).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (5).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (6).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (7).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (8).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (9).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (10).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+            <div class="gallery-item">
+                <img src="Pics\2018\2018 (11).jpg" alt="Photo">
+                <button class="fullscreen-btn">View Full Size</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Fullscreen Modal -->
+    <div id="fullscreenModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="container-fluid div1">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0 div2 animated">
+                    <h5>Write us</h5>
+                    <p>Email: <a href="mailto:arifrind15@gmail.com" class="email">arifrind15@gmail.com</a></p>
+                    <br>
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://x.com/ArifRindPTI?t=T3cHUKG6ds0zGL0Bv8tBOw&s=09" aria-label="Twitter"
+                            target="_blank">
+                            <img src="Icons/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com/arifrindofficial?igsh=MWg1MzZwZWJveGx5NA=="
+                            aria-label="Instagram" target="_blank">
+                            <img src="Icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/arifrind15?mibextid=ZbWKwL" aria-label="facebook"
+                            target="_blank">
+                            <img src="Icons/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://www.youtube.com/@arifrind" aria-label="youtube" target="_blank">
+                            <img src="Icons/youtube.png" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0 div3 animated">
+                    <h5>Useful links</h5>
+                    <div class="Menu">
+                        <a href="index.html">Home</a>
+                        <br>
+                        <a href="about.html">About</a>
+                        <br>
+                        <a href="#top">Events</a>
+                        <br>
+                        <a href="contact.html">Contact Us</a>
+                        <br>
+                        <a href="social_welfare.html">Social Work</a>
+                        <br>
+                        <a href="#top">Back to Top</a>
+                    </div>
+                </div>
+                <div class="col-md-4 div4 animated">
+                    <h5>Address</h5>
+                    <div>
+                        <p>Dera Allah Yar, Jafarabad, <br> Balochistan Province of Pakistan</p>
+                        <iframe loading="lazy"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14042.03334735356!2d68.34988474999999!3d28.37371055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393477e237294b09%3A0x6de34fb11c624bad!2sDera%20Allah%20Yar%2C%20Jaffarabad%2C%20Balochistan!5e0!3m2!1sen!2s!4v1721950268345!5m2!1sen!2s"
+                            title="Dera Allah Yar, Jafarabad" aria-label="Dera Allah Yar, Jafarabad"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright animated">
+                <hr>
+                <p>© 2024 Muhammad Arif Rind. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            // Toggle Gallery
+            $('.button').click(function () {
+                // Get the target gallery from the data attribute
+                var targetGallery = $(this).data('target');
+
+                // Toggle the specified gallery
+                $(targetGallery).toggle();
+
+                // Change button text
+                $(this).text(function (i, text) {
+                    return text === "Hide Gallery" ? "Show Gallery" : "Hide Gallery";
+                });
+            });
+
+            // Fullscreen Modal
+            $('.fullscreen-btn').click(function () {
+                var src = $(this).siblings('img').attr('src');
+                $('#fullImage').attr('src', src);
+                $('#fullscreenModal').css('display', 'block');
+            });
+
+            $('.close').click(function () {
+                $('#fullscreenModal').css('display', 'none');
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

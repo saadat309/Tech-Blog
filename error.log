@@ -1,0 +1,12 @@
+[31-Jul-2024 20:13:58 Europe/Berlin] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo for sql110.infinityfree.com failed: No such host is known.  in C:\xampp\htdocs\Portfolio\backend.php on line 17
+[31-Jul-2024 20:13:58 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql110.infinityfree.com failed: No such host is known.  in C:\xampp\htdocs\Portfolio\backend.php:17
+Stack trace:
+#0 C:\xampp\htdocs\Portfolio\backend.php(17): mysqli_connect('sql110.infinity...', 'if0_36898807', Object(SensitiveParameterValue), 'if0_36898807_fo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Portfolio\backend.php on line 17
+[31-Jul-2024 20:15:13 Europe/Berlin] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo for sql110.infinityfree.com failed: No such host is known.  in C:\xampp\htdocs\Portfolio\backend.php on line 17
+[31-Jul-2024 20:15:13 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql110.infinityfree.com failed: No such host is known.  in C:\xampp\htdocs\Portfolio\backend.php:17
+Stack trace:
+#0 C:\xampp\htdocs\Portfolio\backend.php(17): mysqli_connect('sql110.infinity...', 'if0_36898807', Object(SensitiveParameterValue), 'if0_36898807_fo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Portfolio\backend.php on line 17

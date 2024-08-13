@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="Pics/Arif5.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section1 {
+            margin: auto;
+            margin-top: 2rem;
+            padding: 0;
+            background-color: #081c15;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            max-width: fit-content;
+            width: 95%;
+            max-height: fit-content;
+        }
+
+        .section1 .col-md-12 {
+            padding-top: 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            padding-bottom: 2rem;
+            margin: 0;
+            max-height: fit-content;
+
+        }
+
+        .section1 .col-md-12 .p {
+            font-size: 2vw;
+            text-align: justify;
+            color: #d8f3dc;
+            line-height: 4vw;
+            word-spacing: 0.5vw;
+            border-bottom: #d8f3dc 1px solid;
+            padding-bottom: 1rem;
+        }
+
+        .section1 .col-md-12 .headings {
+            padding: 0;
+            margin: auto;
+            margin-top: 0.5rem;
+
+        }
+
+        .section1 .col-md-12 .headings .col-md-4 {
+            background-color: transparent;
+            margin: 0;
+
+        }
+
+        .section1 .col-md-12 .headings .col-md-4 a {
+            text-decoration: none;
+        }
+
+        .section1 .col-md-12 .headings .col-md-4 img {
+            background-color: transparent;
+            margin: 0rem auto;
+            width: 40%;
+        }
+
+        .section1 .headings .heading1 {
+            margin: 0rem;
+            text-align: center;
+            font-size: 3.5vw;
+            padding: 1rem;
+        }
+
+        .section1 .headings .heading2 {
+            margin: 0rem;
+            text-align: center;
+            font-size: 3.5vw;
+            padding: 1rem;
+        }
+
+        .section1 .headings .heading3 {
+            margin: 0rem;
+            text-align: center;
+            font-size: 3.5vw;
+            padding: 1rem;
+        }
+
+        .section1 .headings span {
+            padding: 0.2rem;
+            color: darkorange;
+            border-bottom: 0.5vw solid darkorange;
+            border-radius: 10px;
+        }
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 991px) {
+            .section1 .col-md-12 {
+                padding: 2rem;
+            }
+
+            .section1 .headings .heading1 span,
+            .section1 .headings .heading2 span,
+            .section1 .headings .heading3 span {
+                font-size: 3vw;
+                padding: 0.5rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .section1 .col-md-12 {
+                padding: 2rem;
+            }
+
+            .section1 .col-md-12 .p {
+                font-size: 4vw;
+                line-height: 7vw;
+            }
+
+            .section1 .col-md-12 .headings a br {
+                display: none;
+            }
+
+            .section1 .col-md-12 .headings .col-md-4 {
+                text-align: center;
+            }
+
+            .section1 .col-md-12 .headings .col-md-4 img {
+                width: 15%;
+            }
+
+            .section1 .headings .heading1 span,
+            .section1 .headings .heading2 span,
+            .section1 .headings .heading3 span {
+                font-size: 5vw;
+                padding: 0.5rem;
+            }
+        }
+
+        /* Details */
+
+        .Details {
+            margin: 0 auto;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            padding: 0;
+            border-bottom: 10px solid #081c15;
+            border-radius: 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            max-width: fit-content;
+            width: 95%;
+            max-height: fit-content;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .Details .Background h1 {
+            padding-top: 2rem;
+            padding-bottom: 0rem;
+            font-size: 5vw;
+            text-align: center;
+        }
+
+        .Details .Education h1 {
+            padding-top: 4rem;
+            padding-bottom: 0rem;
+            font-size: 5vw;
+            text-align: center;
+
+        }
+
+        .Details .Politics h1 {
+            padding-top: 4rem;
+            padding-bottom: 0rem;
+            font-size: 5vw;
+            text-align: center;
+
+        }
+
+        .Details h1 span {
+            padding: 0.2rem;
+            border-bottom: 0.5vw solid darkorange;
+            border-radius: 10px;
+        }
+
+        .Details p {
+            padding-left: 4rem;
+            padding-right: 4rem;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+            font-size: 2vw;
+            text-align: justify;
+            line-height: 4vw;
+            word-spacing: 0.5vw;
+            border-bottom: 10px solid #081c15;
+            border-radius: 20px;
+        }
+
+        .Details .Politics p {
+            padding-bottom: 0rem;
+            border-bottom: none;
+            border-radius: none;
+        }
+
+        .Details .Politics ul {
+            margin: 0;
+            padding: 4rem;
+            padding-top: 0rem;
+            font-size: 2vw;
+            text-align: justify;
+            line-height: 4vw;
+            word-spacing: 0.5vw;
+            list-style-type: none;
+        }
+
+        .Details .Politics ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-left: 0;
+        }
+
+        .Details .Politics ul li img {
+            margin-right: 0.5rem;
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+        }
+
+
+        /* Media Queries */
+
+        @media (max-width: 991px) {
+
+
+            .Details p {
+                font-size: 2.5vw;
+                line-height: 6vw;
+            }
+
+            .Details .Politics ul {
+                font-size: 2.5vw;
+                line-height: 6vw;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+
+            .Details .Background h1 span,
+            .Details .Education h1 span,
+            .Details .Politics h1 span {
+                font-size: 8vw;
+                border-bottom-width: 4px;
+            }
+
+            .Details p {
+                font-size: 4vw;
+                line-height: 8vw;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 3rem;
+            }
+
+
+            .Details .Politics ul {
+                font-size: 4vw;
+                line-height: 8vw;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-0 m-0" id="top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <b>Muhammad
+                        Arif Rind</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5"aria-current="page"
+                                href="index.html" >
+                                <span>home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize fs-5"
+                                style="color: #40916c;">
+                                <span>about</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="social_welfare.html">
+                                <span>social welfare</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="events.html">
+                                <span>events</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize fs-5" href="contact.html">
+                                <span>contact us</span>
+                            </a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container section1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="p">
+                    Arif Rind belongs to a notable Rind Baloch family of Jaffarabad. Since joining Pakistan Tehreek-e-Insaf in 2009, he has held various
+                    significant positions, including District President of Jafarabad and Provincial Deputy General
+                    Secretary of Balochistan, leading numerous membership campaigns and political activities across
+                    Balochistan.
+                </div>
+                <div class="container headings">
+                    <div class="row">
+                        <div class="col-md-4 heading1">
+                            <a href="#Background">
+
+                                <img src="Icons/background-check.png" alt="">
+                                <br>
+                                <span>Background</span>
+                            </a>
+                        </div>
+                        <div class="col-md-4 heading2">
+                            <a href="#Education">
+
+                                <img src="Icons/mortarboard.png" alt="">
+                                <br>
+                                <span>Education</span>
+                            </a>
+                        </div>
+                        <div class="col-md-4 heading3">
+                            <a href="#Politics">
+
+                                <img src="Icons/speech.png" alt="">
+                                <br>
+                                <span>Political Activism</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container Details">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Background" id="Background">
+                    <h1>
+                        <span>Background</span>
+                    </h1>
+                    <p>
+                        Arif Rind hails from a notable Baloch family of Jaffarabad. He has been active in his area since
+                        2006,
+                        frequently doing flood relief work and distributing goods among needy people during the holy
+                        month of
+                        Ramazan. He established a blood bank by forming a team of volunteers to donate blood for
+                        children with
+                        thalassemia and has significantly highlighted political, social, and welfare work among the
+                        youth during
+                        various periods. He founded the Youth Activism Organization for the youth across Balochistan,
+                        engaging
+                        thousands of young people in social and welfare activities.
+                    </p>
+                </div>
+
+                <div class="Education" id="Education">
+                    <h1>
+                        <span>Education</span>
+                    </h1>
+                    <p>
+                        He hold a strong educational foundation, having completed his Matriculation and Intermediate
+                        (FSC) from the esteemed Balochistan Board. He then pursued his Bachelor's degree in Law (LLB). Additionally, he has also earned a Master's degree in English
+                        (M.A English). This diverse educational background has equipped him with a unique blend of legal and literary expertise,
+                        enabling him to approach challenges with a distinct perspective.
+                    </p>
+                </div>
+
+                <div class="Politics" id="Politics">
+                    <h1>
+                        <span>Political Activism</span>
+                    </h1>
+                    <p>
+                        He joined Pakistan Tehreek-e-Insaf in 2009 as a student and became a part of the Insaf Student
+                        Federation. He was a pioneer of membership campaigns in Balochistan and served as the membership
+                        camp
+                        in-charge, conducting extensive membership drives across Jafarabad, Nasirabad, Osta Muhammad,
+                        Sobatpur,
+                        and throughout Balochistan. Subsequently, he served as the press secretary for Pakistan
+                        Tehreek-e-Insaf
+                        District Jafarabad. In the 2012 intra-party elections, he was elected as the District President
+                        of
+                        Jafarabad and later held various positions in Pakistan Tehreek-e-Insaf, including:
+                    <ul>
+                        <li> <img src="Icons\bullet.png" alt="">Additional General Secretary of the Southeast Region</li>
+                        <li> <img src="Icons\bullet.png" alt="">Divisional President of Nasirabad Division for Pakistan
+                            Tehreek-e-Insaf</li>
+                        <li> <img src="Icons\bullet.png" alt="">Provincial Deputy General Secretary of Balochistan</li>
+                        <li> <img src="Icons\bullet.png" alt="">Central Senior Vice President of Balochistan</li>
+                        <li> <img src="Icons\bullet.png" alt="">Central General Secretary of Insaf Youth Wing Pakistan
+                        </li>
+                        <li> <img src="Icons\bullet.png" alt="">Member of the National Council of Pakistan Tehreek-e-Insaf
+                        </li>
+                        <li> <img src="Icons\bullet.png" alt="">Member of the Central Advisory Council for the Chairperson
+                            of Pakistan Tehreek-e-Insaf Imran
+                            Khan
+                        </li>
+                        <li> <img src="Icons\bullet.png" alt="">Member of the Central Executive Committee of Pakistan
+                            Tehreek-e-Insaf</li>
+                        <li> <img src="Icons\bullet.png" alt="">In-charge Chief Organizer Election Cell for Baltistan
+                            Division</li>
+                        <li> <img src="Icons\bullet.png" alt="">In-charge Chief Organizer Election Cell for Muzaffarabad
+                            Division, Azad Kashmir</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="container-fluid div1">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0 div2 animated">
+                    <h5>Write us</h5>
+                    <p>Email: <a href="mailto:arifrind15@gmail.com" class="email">arifrind15@gmail.com</a></p>
+                    <br>
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://x.com/ArifRindPTI?t=T3cHUKG6ds0zGL0Bv8tBOw&s=09" aria-label="Twitter"
+                            target="_blank">
+                            <img src="Icons/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com/arifrindofficial?igsh=MWg1MzZwZWJveGx5NA=="
+                            aria-label="Instagram" target="_blank">
+                            <img src="Icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/arifrind15?mibextid=ZbWKwL" aria-label="facebook"
+                            target="_blank">
+                            <img src="Icons/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://www.youtube.com/@arifrind" aria-label="youtube" target="_blank">
+                            <img src="Icons/youtube.png" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0 div3 animated">
+                    <h5>Useful links</h5>
+                    <div class="Menu">
+                        <a href="index.html">Home</a>
+                        <br>
+                        <a href="#top">About</a>
+                        <br>
+                        <a href="events.html">Events</a>
+                        <br>
+                        <a href="contact.html">Contact Us</a>
+                        <br>
+                        <a href="social_welfare.html">Social Work</a>
+                        <br>
+                        <a href="#top">Back to Top</a>
+                    </div>
+                </div>
+                <div class="col-md-4 div4 animated">
+                    <h5>Address</h5>
+                    <div>
+                        <p>Dera Allah Yar, Jafarabad, <br> Balochistan Province of Pakistan</p>
+                        <iframe loading="lazy"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14042.03334735356!2d68.34988474999999!3d28.37371055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393477e237294b09%3A0x6de34fb11c624bad!2sDera%20Allah%20Yar%2C%20Jaffarabad%2C%20Balochistan!5e0!3m2!1sen!2s!4v1721950268345!5m2!1sen!2s"
+                            title="Dera Allah Yar, Jafarabad" aria-label="Dera Allah Yar, Jafarabad"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright animated">
+                <hr>
+                <p>© 2024 Muhammad Arif Rind. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>
